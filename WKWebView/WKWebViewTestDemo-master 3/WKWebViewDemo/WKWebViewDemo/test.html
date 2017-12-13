@@ -7,10 +7,28 @@
 	  	font-size: 40px;
 	  }
 	</style>
+    <!-- 纠错信息弹出 -->
+    <div class="tan_err" id="tan_err" onclick="$(this).hide()" style="opacity: 0;">
+        <div class="nr">
+            <p class="msg"></p>
+        </div>
+    </div>
+
+<script type="text/javascript" src="http://www.yilongzc.com//statics/wechat/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="http://www.yilongzc.com//statics/com/layer/layer.js"></script>
+<script type="text/javascript" src="http://www.yilongzc.com//statics/com/js/jquery.form.js"></script>
+<script type="text/javascript" src="http://www.yilongzc.com//statics/com/js/com.js"></script>
+<script type="text/javascript" src="http://www.yilongzc.com//statics/wechat/js/com.js.js?20170726001"></script>
+<!-- 纠错信息弹出 -->
+<div class="tan_err" id="tan_err" onclick="$(this).hide()" style="opacity: 0;">
+    <div class="nr">
+        <p class="msg"></p>
+    </div>
+</div>
 </head>
 
 <body>
-  
+
 <div style="margin-top: 100px">
 	<h1>Test how to use objective-c call js</h1><br/>
 	<div><input type="button" value="call js alert" onclick="callJsAlert()"></div>
@@ -35,7 +53,12 @@
 <script type="text/javascript">
    function callJsAlert() {
    	alert('Objective-C call js to show alert');
-    
+
+
+<!--    showErr('login success。。。');-->
+<!--    window.location.reload();-->
+
+
     window.webkit.messageHandlers.AppModel.postMessage({body: 'call js alert in js'});
    }
 
@@ -64,6 +87,28 @@ var jsParamFunc = function(argument) {
   = argument['name'];
 }
 showAler();
+
+
+
+var handle = '';
+function showErr(msg,msc) {
+    if(!msc){
+        msc = 2000;
+    }
+    
+    $("#tan_err").stop(true);
+    //$("#tan_err").show().css("opacity", 0);
+    
+    $("#tan_err .msg").html(msg);
+    $("#tan_err").show().css("opacity", 1);
+    setTimeout(function () {
+               $("#tan_err").animate({opacity: 0}, msc, function () {
+                                     $("#tan_err").hide();
+                                     });
+               }, 1000)
+}
+
+
 </script>
 </body>
 </html>

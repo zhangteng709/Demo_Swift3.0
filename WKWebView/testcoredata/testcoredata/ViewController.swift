@@ -17,7 +17,7 @@ class ViewController: UIViewController,WKNavigationDelegate,WKScriptMessageHandl
     
     var webView:WKWebView!
     
-    var url:String! = "http://www.yilongzc.com/m/oldnew/old?appSource=True&msn=g38b2f5ff47436671b6e533d8dc3614845d"
+    var url:String! = "http://192.168.1.180/wechat/themes/laodaixin/?appSource=True&msn=g38b2f5ff47436671b6e533d8dc3614845d"
     
     var jsContext:JSContext!
     

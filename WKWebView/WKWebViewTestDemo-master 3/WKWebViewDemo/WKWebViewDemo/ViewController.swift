@@ -210,6 +210,9 @@ func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigat
   
 // MARK: - WKUIDelegate
 func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
+    
+
+    
   let alert = UIAlertController(title: "Tip", message: message, preferredStyle: .alert)
   alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (_) -> Void in
     // We must call back js
@@ -219,17 +222,17 @@ func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: S
   self.present(alert, animated: true, completion: nil)
 }
 
-//func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
-//  let alert = UIAlertController(title: "Tip", message: message, preferredStyle: .alert)
-//  alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (_) -> Void in
-//    completionHandler(true)
-//  }))
-//  alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (_) -> Void in
-//    completionHandler(false)
-//  }))
-//  
-//  self.present(alert, animated: true, completion: nil)
-//}
+func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
+  let alert = UIAlertController(title: "Tip", message: message, preferredStyle: .alert)
+  alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (_) -> Void in
+    completionHandler(true)
+  }))
+  alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (_) -> Void in
+    completionHandler(false)
+  }))
+  
+  self.present(alert, animated: true, completion: nil)
+}
 
 func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
 //  let alert = UIAlertController(title: prompt, message: defaultText, preferredStyle: .alert)

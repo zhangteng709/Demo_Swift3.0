@@ -15,6 +15,7 @@
 		0E2EA0B52022B9A9003833E5 /* WiFi_________Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2EA0B42022B9A9003833E5 /* WiFi_________Tests.swift */; };
 		0E2EA0C02022B9A9003833E5 /* WiFi_________UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2EA0BF2022B9A9003833E5 /* WiFi_________UITests.swift */; };
 		0E2EA0D72022CBE7003833E5 /* WIFITool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2EA0D62022CBE7003833E5 /* WIFITool.m */; };
+		0EF806A22024149B00DC1B0E /* GetSystemInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF806A12024149B00DC1B0E /* GetSystemInfoHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		0E2EA0CD2022C0CF003833E5 /* WiFi名称获取，信号获取-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WiFi名称获取，信号获取-Bridging-Header.h"; sourceTree = "<group>"; };
 		0E2EA0D52022CBE7003833E5 /* WIFITool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WIFITool.h; sourceTree = "<group>"; };
 		0E2EA0D62022CBE7003833E5 /* WIFITool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WIFITool.m; sourceTree = "<group>"; };
+		0EF806A02024149A00DC1B0E /* GetSystemInfoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetSystemInfoHelper.h; sourceTree = "<group>"; };
+		0EF806A12024149B00DC1B0E /* GetSystemInfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetSystemInfoHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				0E2EA0A12022B9A9003833E5 /* ViewController.swift */,
 				0E2EA0D52022CBE7003833E5 /* WIFITool.h */,
 				0E2EA0D62022CBE7003833E5 /* WIFITool.m */,
+				0EF806A02024149A00DC1B0E /* GetSystemInfoHelper.h */,
+				0EF806A12024149B00DC1B0E /* GetSystemInfoHelper.m */,
 				0E2EA0A32022B9A9003833E5 /* Main.storyboard */,
 				0E2EA0A62022B9A9003833E5 /* Assets.xcassets */,
 				0E2EA0A82022B9A9003833E5 /* LaunchScreen.storyboard */,
@@ -268,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E2EA0D72022CBE7003833E5 /* WIFITool.m in Sources */,
+				0EF806A22024149B00DC1B0E /* GetSystemInfoHelper.m in Sources */,
 				0E2EA0A22022B9A9003833E5 /* ViewController.swift in Sources */,
 				0E2EA0A02022B9A9003833E5 /* AppDelegate.swift in Sources */,
 			);

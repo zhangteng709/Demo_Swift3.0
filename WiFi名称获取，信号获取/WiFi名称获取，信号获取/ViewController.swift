@@ -21,10 +21,33 @@ class ViewController: UIViewController {
         
         getWiFiInfo()
         
-        
+        getsystemInfo()
 
     }
 
+    func getsystemInfo()  {
+        
+//        NSLog(@"获取电池电量(一般用百分数表示,大家自行处理就好)====%f",[GetSystemInfoHelper getBatteryQuantity]);
+//        NSLog(@"获取电池状态(UIDeviceBatteryState为枚举类型)====%ld",[GetSystemInfoHelper getBatteryStauts]);
+//        NSLog(@"获取总内存大小====%lld",[GetSystemInfoHelper getTotalMemorySize]);
+//        NSLog(@"容量转换====%@",[GetSystemInfoHelper fileSizeToString: [GetSystemInfoHelper getTotalMemorySize]]);
+//        NSLog(@"IP地址====%@",[GetSystemInfoHelper deviceIPAdress]);
+//        NSLog(@"当前手机连接的WIFI名称(SSID)====%@",[GetSystemInfoHelper getWifiName]);
+//        NSLog(@"获取当前连接Wi-Fi名称与MAC地址====%@",[GetSystemInfoHelper fetchSSIDInfo]);
+//        NSLog(@"获取当前连接Wi-Fi的IP地址====%@",[GetSystemInfoHelper getIPAddress:YES]);
+        
+        
+        print("获取电池电量(一般用百分数表示,大家自行处理就好)====%f",GetSystemInfoHelper.getBatteryQuantity())
+        print("获取电池状态(UIDeviceBatteryState为枚举类型)====%ld",GetSystemInfoHelper.getBatteryStauts())
+        print("获取总内存大小====%lld",GetSystemInfoHelper.getTotalMemorySize())
+        print("容量转换====%@",GetSystemInfoHelper.fileSize(toString: UInt64(GetSystemInfoHelper.getTotalMemorySize())))
+        print("IP地址====%@",GetSystemInfoHelper.deviceIPAdress())
+        print("当前手机连接的WIFI名称(SSID)====%@",GetSystemInfoHelper.getWifiName())
+        print("获取当前连接Wi-Fi名称与MAC地址====%@",GetSystemInfoHelper.fetchSSIDInfo())
+        print("获取当前连接Wi-Fi的IP地址====%@",GetSystemInfoHelper.getIPAddress(true))
+
+    }
+    
     ///手机所属运营商
     func getCellInfo()  {
         

@@ -614,7 +614,7 @@
 				TargetAttributes = {
 					7713BCD31F6567AE00F07CC8 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = FNHQNU4RFC;
+						DevelopmentTeam = 47YW9RQG7R;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -910,12 +910,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FNHQNU4RFC;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47YW9RQG7R;
 				INFOPLIST_FILE = "$(SRCROOT)/swiftdemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhangzt.test1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jmyj.Family;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -926,12 +929,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FNHQNU4RFC;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47YW9RQG7R;
 				INFOPLIST_FILE = "$(SRCROOT)/swiftdemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhangzt.test1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jmyj.Family;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
